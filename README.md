@@ -1,6 +1,8 @@
 # react-build-lib
 A simple utility for compiling your React components to CommonJS modules.
 
+> Ideally, you should never need to touch Webpack and Babel if all you want to do is to make and publish React components.
+
 # How to use
 
 1. Install the package with either `yarn` or `npm`:
@@ -24,3 +26,6 @@ A simple utility for compiling your React components to CommonJS modules.
 ```
 react-build-lib src lib
 ```
+# Also see
+
+[React-Build-Dist](https://github.com/adrianmcli/react-build-dist)
