@@ -1,13 +1,18 @@
 #!/usr/bin/env node
 
-const shell = require('shelljs');
+const rimrafSync = require('rimraf').sync;
+const exec = require('child_process').exec;
 
 const INPUT_DIR = process.argv[2] || 'src';
 const OUTPUT_DIR = process.argv[3] || 'lib';
 
-shell.rm('-rf', OUTPUT_DIR);
+rimrafSync(OUTPUT_DIR);
 
 const babelExec = 'node_modules/babel-cli/bin/babel.js';
 const presets = 'react,latest';
 
-shell.exec(`${babelExec} ${INPUT_DIR} --out-dir ${OUTPUT_DIR} --presets ${presets} --copy-files`);
+const cmd = `${babelExec} ${INPUT_DIR} --out-dir ${OUTPUT_DIR} --presets ${presets} --copy-files`;
+
+exec(cmd, function(error, stdout, stderr) {
+  console.log(stdout);
+});

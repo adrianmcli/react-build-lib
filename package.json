@@ -1,19 +1,19 @@
 {
   "name": "react-build-lib",
   "version": "0.0.1",
-  "description": "",
+  "description": "A simple utility for compiling your React components to CommonJS modules.",
   "bin": {
     "react-build-lib": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Adrian Li",
   "license": "ISC",
   "dependencies": {
     "babel-cli": "^6.18.0",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
-    "shelljs": "^0.7.5"
+    "rimraf": "^2.5.4"
   }
 }
