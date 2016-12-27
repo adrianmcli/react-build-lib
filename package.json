@@ -1,6 +1,6 @@
 {
   "name": "react-build-lib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple utility for compiling your React components to CommonJS modules.",
   "bin": {
     "react-build-lib": "./bin/index.js"
@@ -14,6 +14,7 @@
     "babel-cli": "^6.18.0",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-3": "^6.17.0",
     "rimraf": "^2.5.4"
   }
 }

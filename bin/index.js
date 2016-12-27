@@ -9,7 +9,7 @@ const OUTPUT_DIR = process.argv[3] || 'lib';
 rimrafSync(OUTPUT_DIR);
 
 const babelExec = 'node_modules/babel-cli/bin/babel.js';
-const presets = 'react,latest';
+const presets = 'react,latest,stage-3';
 
 const cmd = `${babelExec} ${INPUT_DIR} --out-dir ${OUTPUT_DIR} --presets ${presets} --copy-files`;
 
