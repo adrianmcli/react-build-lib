@@ -14,5 +14,8 @@ const presets = 'react,latest';
 const cmd = `${babelExec} ${INPUT_DIR} --out-dir ${OUTPUT_DIR} --presets ${presets} --copy-files`;
 
 exec(cmd, function(error, stdout, stderr) {
+  if (error) {
+    console.log(error);
+  }
   console.log(stdout);
 });
