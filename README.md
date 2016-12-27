@@ -3,6 +3,8 @@ A simple utility for compiling your React components to CommonJS modules.
 
 > Ideally, you should never need to touch Webpack and Babel if all you want to do is to make and publish React components.
 
+This utility uses Babel presets: `react`, `latest`, and `stage-3`.
+
 # How to use
 
 1. Install the package with either `yarn` or `npm`:
@@ -28,4 +30,4 @@ react-build-lib src lib
 ```
 # Also see
 
-[React-Build-Dist](https://github.com/adrianmcli/react-build-dist)
+[React Build Dist](https://github.com/adrianmcli/react-build-dist)
