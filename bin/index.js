@@ -7,7 +7,7 @@ const exec = require('child_process').exec;
 // get inputs
 program
   .version('0.0.1')
-  .option('-b, --stage-0', 'Turn on stage-0 compilation.')
+  .option('-x, --stage-0', 'Turn on stage-0 for experimental features.')
   .parse(process.argv);
 
 const inputDir = program.args[0] || 'src';
